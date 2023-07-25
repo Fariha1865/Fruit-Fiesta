@@ -19,6 +19,7 @@
                 extend: {
                     colors: {
                         'primary': '#F85559',
+                        'secondary': '#ffb6c1',
 
                     },
                     backgroundImage: {
@@ -39,11 +40,13 @@
 
 <body class="font-lato">
     <header>
+
+        <!-- Navbar -->
         <nav class="md:px-10">
         
             <div class="mt-5 px-5  md:bg-primary rounded-full max-w-screen-xl mx-auto py-5 lg:px-10 navbar justify-between flex-row-reverse lg:flex-row bg-base-100">
                 <div class="lg:hidden mr-5" >
-                  <div class="dropdown">
+                  <div class="dropdown  z-10">
                     <label tabindex="0" class="btn btn-ghost lg:hidden md:text-white">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-15 6h15" /></svg>
                     </label>
@@ -55,8 +58,8 @@
                       <li class="my-2"><a>All Fruits</a></li>
 
                       <div class="w-10 ml-2">
-                        <input type="text" placeholder="Search" class="input w-20 h-10 text-xs  input-bordered relative"/>
-                        <i class="fa-solid fa-magnifying-glass absolute ml-10 -mt-6"></i>
+                        <input type="text" placeholder="Search" class="mb-2 input w-20 h-10 text-xs  input-bordered relative"/>
+                        <i class="fa-solid fa-magnifying-glass absolute ml-10 -mt-8"></i>
                       </div>
                     </ul>
                 </div>
@@ -82,6 +85,66 @@
 
               </div>
         </nav>
+
+        <!-- Banner Section -->
+        <section class="max-w-screen-xl lg:mx-auto  mx-10 my-10 border-2 border-solid border-red-700 z-5">
+            <div class="carousel w-full h-[calc(100vh-210px)]">
+                
+                <div id="slide1" class="carousel-item relative w-full inset-0 bg-black opacity-72">
+                    
+                  <img src="./images/banner1.png" class="w-full " />
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute  text-white ml-[23%] mt-[16%] md:ml-[28%] md:mt-[11%] lg:ml-[35%] lg:mt-[10%] flex flex-col justify-center items-center">
+                    <h1 class="font-extrabold text-xl md:text-4xl text-center mb-2">Exotic tastes at your<br> doorstep</h1>
+                    <p class="text-[10px] md:text-base semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-primary text-white rounded-md border-none hover:bg-secondary mt-2">Primary</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/banner2.png" class="w-full" />
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute  text-white ml-[23%] mt-[16%] md:ml-[28%] md:mt-[11%] lg:ml-[35%] lg:mt-[10%] flex flex-col justify-center items-center">
+                    <h1 class="font-extrabold text-xl md:text-4xl text-center mb-2">Exotic tastes at your<br> doorstep</h1>
+                    <p class="text-[10px] md:text-base semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-primary text-white rounded-md border-none hover:bg-secondary mt-2">Primary</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./images/banner3.png" class="w-full" />
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute  text-white ml-[23%] mt-[16%] md:ml-[28%] md:mt-[11%] lg:ml-[35%] lg:mt-[10%] flex flex-col justify-center items-center">
+                    <h1 class="font-extrabold text-xl md:text-4xl text-center mb-2">Exotic tastes at your<br> doorstep</h1>
+                    <p class="text-[10px] md:text-base semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-primary text-white rounded-md border-none hover:bg-secondary mt-2">Primary</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./images/banner4.png" class="w-full" />
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute  text-white ml-[23%] mt-[16%] md:ml-[28%] md:mt-[11%] lg:ml-[35%] lg:mt-[10%] flex flex-col justify-center items-center">
+                    <h1 class="font-extrabold text-xl md:text-4xl text-center mb-2">Exotic tastes at your<br> doorstep</h1>
+                    <p class="text-[10px] md:text-base semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-primary text-white rounded-md border-none hover:bg-secondary mt-2">Primary</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0 hover:bg-black">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
 </body>
 
