@@ -41,21 +41,27 @@
     <header>
         <nav class="md:px-10">
         
-            <div class="mt-5  md:bg-primary rounded-full max-w-screen-xl mx-auto py-5 lg:px-10 navbar justify-between flex-row-reverse lg:flex-row bg-base-100">
-                <div class="lg:hidden mr-5">
+            <div class="mt-5 px-5  md:bg-primary rounded-full max-w-screen-xl mx-auto py-5 lg:px-10 navbar justify-between flex-row-reverse lg:flex-row bg-base-100">
+                <div class="lg:hidden mr-5" >
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden md:text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-15 6h15" /></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-15 6h15" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 pl-0 ml-0  shadow bg-base-100 rounded-box w-20 text-xs">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
+                    <div class="">
+                    <ul tabindex="0" class="dropdown-content text-center font-semibold shadow bg-base-100 rounded-box w-24 text-xs">
+                      <li class="my-2"><a>Home</a></li>
+                      <li class="my-2"><a>About Us</a></li>
+                      <li class="my-2"><a>Shop</a></li>
+                      <li class="my-2"><a>All Fruits</a></li>
 
+                      <div class="w-10 ml-2">
+                        <input type="text" placeholder="Search" class="input w-20 h-10 text-xs  input-bordered relative"/>
+                        <i class="fa-solid fa-magnifying-glass absolute ml-10 -mt-6"></i>
+                      </div>
                     </ul>
+                </div>
                   </div>
-                  
+
                 </div>
                 <div class= "hidden lg:flex md:text-white">
                     <ul class="text-xs menu menu-horizontal px-1 md:text-base">
